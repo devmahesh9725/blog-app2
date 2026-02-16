@@ -8,5 +8,6 @@ export const createPost = (req,res)=>{
             message : "Enter Sufficient data for the post",
         })
     }
-    const 
+    const reqbidy = 6;
+    console.log(reqbidy);
 }
