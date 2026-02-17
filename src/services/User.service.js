@@ -8,5 +8,6 @@ export const registerUserService = async(username,email,password)=>{
         email: email,
         password: hashedpassword,
     });
+    console.log("user have been registerd succesfully  ::::   ::  very good'")
     return user
 }

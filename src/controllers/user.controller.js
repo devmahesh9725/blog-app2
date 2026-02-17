@@ -47,6 +47,7 @@ export const loginUser = async (req, res) => {
     const { email, password } = req.body;
     console.log(email , password);
     if (!email || !password) {
+      console.log("email and password are required >>>>>>>>>>> ")
       return res.status(403).json({
         message: "Invalid Credentials",
       });
@@ -74,7 +75,7 @@ export const loginUser = async (req, res) => {
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     user.password = undefined;
-
+    console.log("done done testing the code ")
     return res.status(200).json({
       success: true,
       message: "Login successful ✅",
