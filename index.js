@@ -23,6 +23,7 @@ app.get("/" , (_,res)=>{
 app.use(cookieParser());
 app.use("/user" ,UserRoutes);
 app.get("/docker" , (req,res)=>{
+    console.log("Docker is started running :::::::>>>>>>>>>>>>  ")
     res.send("Hello docker is running..............===>");
 })
 // app.use("/post",postRoutes)
