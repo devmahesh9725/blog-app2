@@ -5,6 +5,9 @@ export const generateTokenAUthUser = (user)=>{
     expiresIn: "7d",
   });
   console.log(token,"------------token");
+  console.log(token,"------------token");
+  console.log(token,"------------token");
+  console.log(token,"------------token");
  
   return token
 };

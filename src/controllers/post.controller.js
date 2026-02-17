@@ -181,6 +181,7 @@ export const getBlogById = async (req, res) => {
       data: blog,
     });
   } catch (error) {
+    console.log("Error hai bhai : ::")
     console.error("Error fetching blog:", error);
     res.status(500).json({
       success: false,
