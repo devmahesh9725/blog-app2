@@ -167,6 +167,9 @@ export const getBlogById = async (req, res) => {
 
     if (!blog) {
       console.log("No Blog")
+      console.log("No Blog")
+      console.log("No Blog")
+      console.log("No Blog")
       return res.status(404).json({
         success: false,
         message: "Blog post not found",
@@ -184,9 +187,17 @@ export const getBlogById = async (req, res) => {
   } catch (error) {
 
     console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
+    console.error("Error fetching blog:", error);
     res.status(500).json({
       success: false,
-      message: "Failed to fetch blog post",
+      message: "Failed to fetch blog post   PLEASE TRY Again later :::>>>>",
       error: error.message,
     });
   }
@@ -219,6 +230,10 @@ export const getMyBlogs = async (req, res) => {
       },
     });
   } catch (error) {
+    console.error("Error fetching user blogs:", error);
+    console.error("Error fetching user blogs:", error);
+    console.error("Error fetching user blogs:", error);
+    console.error("Error fetching user blogs:", error);
     console.error("Error fetching user blogs:", error);
     res.status(500).json({
       success: false,

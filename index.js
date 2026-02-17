@@ -17,12 +17,15 @@ const dbConnection = ()=>{
 
 dbConnection();
 app.get("/" , (_,res)=>{
+    console.log("/Get ")
     res.send("Everything is Working Properly ------------- >>>")
 })
 
 app.use(cookieParser());
 app.use("/user" ,UserRoutes);
 app.get("/docker" , (req,res)=>{
+    console.log("Docker is started running :::::::>>>>>>>>>>>>  ")
+    console.log("Docker is started running :::::::>>>>>>>>>>>>  ")
     console.log("Docker is started running :::::::>>>>>>>>>>>>  ")
     res.send("Hello docker is running..............===>");
 })
