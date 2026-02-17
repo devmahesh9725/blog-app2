@@ -166,6 +166,7 @@ export const getBlogById = async (req, res) => {
     }
 
     if (!blog) {
+      console.log("No Blog")
       return res.status(404).json({
         success: false,
         message: "Blog post not found",
@@ -181,7 +182,7 @@ export const getBlogById = async (req, res) => {
       data: blog,
     });
   } catch (error) {
-    console.log("Error hai bhai : ::")
+
     console.error("Error fetching blog:", error);
     res.status(500).json({
       success: false,
