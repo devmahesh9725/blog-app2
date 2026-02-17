@@ -45,7 +45,7 @@ export const registerUser = async (req, res) => {
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
-
+    console.log(email , password);
     if (!email || !password) {
       return res.status(403).json({
         message: "Invalid Credentials",
